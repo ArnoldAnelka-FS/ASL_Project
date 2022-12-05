@@ -1,8 +1,10 @@
 # ASL_Project
 
+## Assignment Template-Engines
+In this assignment, I was able to use twig.js to RESTful HTML form user interface out of my Express application. 
 
 ## Assignment Restful API
-In this assignment I was able to  code out a fully functioning Restful API. I was able to showcase my my functioning code showing Index - Show all products
+In this assignment I was able to code out a fully functioning Restful API. I was able to showcase my my functioning code showing Index - Show all products
 Show - Show specific product
 Update - Update a specific product's properties
 Create - Create a new product with properties
