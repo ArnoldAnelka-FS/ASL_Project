@@ -1,5 +1,9 @@
 # ASL_Project
 
+## Assignment Sequelize-Orm
+In this assignment I was able to layout the database structure using exactly 3 different models, Products:Variants:Images
+
+
 ## Assignment Template-Engines
 In this assignment, I was able to use twig.js to RESTful HTML form user interface out of my Express application. 
 
