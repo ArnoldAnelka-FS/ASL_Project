@@ -1,15 +1,32 @@
 {
-  "name": "assignment_1.2",
+  "name": "ASL_Project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch": "nodemon -e js,twig index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.20.1"
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.26.0",
+    "twig": "^1.15.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArnoldAnelka-FS/ASL_Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArnoldAnelka-FS/ASL_Project/issues"
+  },
+  "homepage": "https://github.com/ArnoldAnelka-FS/ASL_Project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sequelize-cli": "^6.5.2"
   }
 }
