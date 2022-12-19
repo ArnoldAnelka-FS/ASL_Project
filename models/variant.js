@@ -18,8 +18,7 @@ module.exports = (sequelize, DataTypes) => {
   }
   Variant.init({
     title: DataTypes.STRING,
-    price: DataTypes.FLOAT,
-    productId: DataTypes.INTEGER
+    price: DataTypes.FLOAT
   }, {
     sequelize,
     modelName: 'Variant',

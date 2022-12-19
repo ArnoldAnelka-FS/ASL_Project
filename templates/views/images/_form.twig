@@ -1,4 +1,8 @@
-<form method="POST" action="/images/{% if image.id %}{{ image.id }} {% endif %} ">
+<form 
+ enctype="multipart/form-data"
+method="POST" 
+action="/images/{% if image.id %}{{ image.id }} {% endif %} ">
+
     {% if image.id %}
      <input type="hidden" name="id" value="{{ image.id }}>
     {% endif %}
@@ -6,14 +10,18 @@
     <div>
         <label>Variant:</label>
         <select name="variantId">
+            <option>Select Variant ...</option>
             {% for variant in variants %}
-            <option value ="{{ variant.id }}">{{ variant.title}}</option>
+            <option value ="{{ variant.id }}" {% if variant.id == image.variantId %} selected="selected">{% endif %}
+            {{ variant.title}}</option>
             {% endfor %}
         </select>
     </div>
     <div>
-
-      <div>
+        <label for="image">Upload Image:</label>
+        <input type="file" name="image" id="image" />
+    </div>
+    <div>
         <input type="submit" type="submit" />
     </div>
 </form>

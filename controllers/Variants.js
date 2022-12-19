@@ -6,12 +6,12 @@ const index = async (req, res) => {
     // res.json(variants)
 }
 const form = async (req, res) => {
-    const variant = await Variant.findAll()
+    const products = await Product.findAll()
     if (req.params.id) {
         const variant = await Variant.findByPk(req.params.id)
-        res.render('views/variants/edit', { variant, Product })
+        res.render('views/variants/edit', { variant, products })
     } else {
-        res.render('views/variants/create', { Product })
+        res.render('views/variants/create', { products })
     }
 }
 const show = async (req, res) => {
@@ -31,7 +31,7 @@ const update = async (req, res) => {
     res.redirect('/variants/' + req.params.id )
 }
 const remove = async (req, res) => {
-    const variant = await Variant.destroy({ where: {id: req.params.id}})
+    const variants = await Variant.destroy({ where: {id: req.params.id}})
     res.redirect('/variants')
 }
 
